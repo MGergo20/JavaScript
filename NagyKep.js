@@ -5,7 +5,7 @@ export default class NagyKep{
     #aktIndex=0;
     #lista=[];
     constructor(lista) {
-        this.NagyKep = document.getElementsByClassName("kiemeltkep")[0]
+        this.nagykepElem = document.getElementsByClassName("kiemeltkep")[0]
         this.#lista=lista
         new KiemeltKep(
             this.#lista[this.#aktIndex].kep,
@@ -17,7 +17,7 @@ export default class NagyKep{
         this.esemenykezelok();
     }
     esemenykezelok(){
-        this.balElem.addEventListener("click", function (){
+        this.balElem.addEventListener("click",  ()=>{
             console.log(this.#aktIndex);
             this.#aktIndex -- ;
             this.#aktIndex < 0 ? (this.#aktIndex = this.#lista.lenght - 1) : (this.#aktIndex = this.#aktIndex);
@@ -27,7 +27,7 @@ export default class NagyKep{
                 this.nagykepElem
             );
         });
-        this.jobbElem.addEventListener("click", function() {
+        this.jobbElem.addEventListener("click", ()=> {
            console.log(this.#aktIndex);
            this.#aktIndex ++;
            this.#aktIndex > 0 ? (this.#aktIndex = this.#lista.lenght - 1) : (this.#aktIndex = this.#aktIndex);
