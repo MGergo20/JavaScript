@@ -1,0 +1,2 @@
+A this az aktuális osztály példányra mutat esemény kezelőben használva function nevű függvény meghívva 
+azt az objektumot jelenit amelyik eseményt kiváltotta nyílt függvény esetén azt az objektumot jeleníti meg amelyik osztálynak a hatóköráben van.

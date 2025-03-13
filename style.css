@@ -1,0 +1,33 @@
+body {
+    max-width: 800px;
+    margin: auto;
+}
+*{
+    box-sizing: border-box;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.galeria img, .nagykep img   {
+    width: 100%;
+    
+}
+.nagykep {
+    display: grid;
+    grid-template-columns: 60px auto 60px;
+    border: 1px solid gray; 
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
