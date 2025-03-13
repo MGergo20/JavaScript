@@ -10,7 +10,7 @@ export default class Galeria {
   megjelenit() {
     for (let i = 0; i < this.#lista.length; i++) {
       const element = this.#lista[i];
-      const KEP = new Kep(element.kep,element.cim, this.szuloElem);
+      const KEP = new Kep(element.kep,element.cim, element.index, this.szuloElem);
     }
   }
 }
